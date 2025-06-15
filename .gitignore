@@ -1,0 +1,42 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Mac OS / Linux / Windows files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.cs416/
+
+# Python environment or tools
+*.egg-info/
+*.egg
+*.env
+*.bak
+*.swp
+
+# Streamlit's auto-generated cache
+.streamlit/
+
+# Data backups or large raw files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Ignore everything in data/...
+data/*
+
+# ...but allow known cleaned CSVs
+!data/us-states.csv
+!data/co-est2019-alldata.csv
