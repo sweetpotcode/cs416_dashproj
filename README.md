@@ -13,6 +13,8 @@ This dashboard ranks U.S. states by their COVID-19 case rates per 100,000 reside
 ``` bash
 python3 -m venv .cs416
 source .cs416/bin/activate
+
+pip install -r requirements.txt
 ```
 
 ## run
