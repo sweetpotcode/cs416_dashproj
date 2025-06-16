@@ -28,4 +28,24 @@ def load_data():
 
 df = load_data()
 
-st.dataframe(df.head(20))
+#st.dataframe(df.head(20))
+
+st.title("COVID-19 Impact by State: Case Rate Rankings as of July 2020")
+#st.caption("This dashboard ranks U.S. states by their COVID-19 case rates per 100,000 residents, providing a snapshot of relative impact as of July 31, 2020.")
+
+# Sort for visualization
+df_sorted = df.sort_values("cases_per_100k", ascending=False)
+
+# Plot with Plotly
+fig = px.bar(
+    df_sorted,
+    x="cases_per_100k",
+    y="state",
+    orientation="h",
+    title="COVID-19 Case Rate per 100,000 Residents (by State)",
+    labels={"cases_per_100k": "Cases per 100k", "state": "State"},
+    color="cases_per_100k",
+    color_continuous_scale="Reds"
+)
+
+st.plotly_chart(fig, use_container_width=True)

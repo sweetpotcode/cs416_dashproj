@@ -1,7 +1,0 @@
-git init
-
-#create repository on remote, then:
-git remote add origin git@github.com:sweetpotcode/cs416_dashproj.git
-
-git branch -M main
-git push -u origin main
