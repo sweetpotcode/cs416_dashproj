@@ -1,6 +1,6 @@
-# CS416 Dashboard Project: Mask Use vs COVID Spread
+# CS416 Dashboard Project: COVID-19 Impact by State: Case Rate Rankings as of July 2020
 
-This Streamlit dashboard visualizes the relationship between mask usage and COVID-19 case rates across U.S. counties in July 2020.
+This dashboard ranks U.S. states by their COVID-19 case rates per 100,000 residents, providing a snapshot of relative impact as of July 31, 2020.
 
 ## Features
 - Interactive slider to filter by % mask usage
