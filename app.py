@@ -41,6 +41,8 @@ def load_data():
 
 df = load_data()
 
+st.set_page_config(layout="wide")
+
 st.title("COVID-19 Impact vs Vaccination Across U.S. States")
 
 # Sidebar: Date selection
@@ -127,6 +129,7 @@ fig_scatter = px.scatter(
     },
     title=f"Deaths vs Cases per 100k (Year: {selected_year})"
 )
+fig_scatter.update_traces(marker=dict(size=10)) 
 #st.plotly_chart(fig_scatter, use_container_width=True)
 
 
