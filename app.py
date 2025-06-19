@@ -41,7 +41,7 @@ def load_data():
 
 df = load_data()
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 
 st.title("COVID-19 Impact vs Vaccination Across U.S. States")
 
