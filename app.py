@@ -94,26 +94,6 @@ color_map = {
 # End Categorize vaccination rate
 
 
-#st.subheader("Chart 1: COVID-19 Outcomes vs Vaccination Rate")
-
-#old version
-# fig_scatter = px.scatter(
-#     df_latest,
-#     x="cases_per_100k",
-#     y="deaths_per_100k",
-#     color="vaccination_rate",
-#     hover_name="state",
-#     color_continuous_scale="Viridis",
-#     labels={
-#         "cases_per_100k": "Cases per 100k",
-#         "deaths_per_100k": "Deaths per 100k",
-#         "vaccination_rate": "Vaccination %"
-#     },
-#     title=f"Deaths vs Cases per 100k (Year: {selected_year})"
-# )
-# st.plotly_chart(fig_scatter, use_container_width=True)
-#"""
-
 # Create scatter plot using shape + color
 fig_scatter = px.scatter(
     df_latest,
@@ -133,23 +113,6 @@ fig_scatter = px.scatter(
 )
 fig_scatter.update_traces(marker=dict(size=10)) 
 #st.plotly_chart(fig_scatter, use_container_width=True)
-
-
-# orginal Chart 2
-# st.subheader("Vaccination Rates by State")
-
-# df_sorted_vax = df_latest.sort_values("vaccination_rate", ascending=False)
-
-# fig_bar = px.bar(
-#     df_sorted_vax,
-#     x="state",
-#     y="vaccination_rate",
-#     color="vaccination_rate",
-#     color_continuous_scale="Blues",
-#     labels={"vaccination_rate": "Vaccination %"},
-#     title=f"State Vaccination Rates (Year: {selected_year})"
-# )
-#st.plotly_chart(fig_bar, use_container_width=True)
 
 #st.subheader("Chart 2: Average Deaths per 100k by Vaccination Group")
 
@@ -177,12 +140,10 @@ fig_summary = px.bar(
     },
     title=f"Average Deaths per 100k by Vaccination Level (Year: {selected_year})"
 )
-
 #st.plotly_chart(fig_summary, use_container_width=True)
 
 
 #st.subheader("COVID-19 Outcomes and Grouped Summary")
-
 # Create 2 columns
 col1, col2 = st.columns(2)
 
