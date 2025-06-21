@@ -45,7 +45,7 @@ st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 
 st.title("COVID-19 Impact vs Vaccination Across U.S. States")
 
-st.info("Select a year in the left sidebar. If the sidebar is hidden, click the ← arrow at the top left to expand it.")
+#st.info("Select a year in the left sidebar. If the sidebar is hidden, click the ← arrow at the top left to expand it.")
 
 # Sidebar: Date selection
 st.sidebar.header("Filters")
