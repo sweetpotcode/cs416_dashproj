@@ -155,7 +155,7 @@ with col2:
     st.markdown("### Chart 2: Avg Deaths per 100k by Vax Group")
     st.plotly_chart(fig_summary, use_container_width=False, width=500, height=400)
 
-st.markdown("---")
+#st.markdown("---")
 st.markdown("#### Remarks")
 st.markdown(
     "🔗 The full source code and all datasets used in this dashboard are available at: "
