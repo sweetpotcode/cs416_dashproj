@@ -156,7 +156,7 @@ with col2:
     st.plotly_chart(fig_summary, use_container_width=False, width=500, height=400)
 
 #st.markdown("---")
-st.markdown("#### Remarks")
+st.markdown("#### Datasets and code:")
 st.markdown(
     "🔗 The full source code and all datasets used in this dashboard are available at: "
     "[GitHub Repository](https://github.com/sweetpotcode/cs416_dashproj)"
