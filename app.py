@@ -159,5 +159,5 @@ with col2:
 st.markdown("#### Datasets and code:")
 st.markdown(
     "🔗 The full source code and all datasets used in this dashboard are available at: "
-    "[GitHub Repository](https://github.com/sweetpotcode/cs416_dashproj)"
+    "[https://github.com/sweetpotcode/cs416_dashproj](https://github.com/sweetpotcode/cs416_dashproj)"
 )
